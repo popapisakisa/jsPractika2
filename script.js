@@ -14,17 +14,17 @@ const numerOfFilmsDB = { // создание объекта
 //         d = +prompt("На сколько вы его оцените?", '');
 // numerOfFilmsDB.movies[a] = b;
 // numerOfFilmsDB.movies[c] = d;
-// for (let i = 0; i < 2; i++) {
-//     const a = prompt("Один из последних просмотренных фильмов?", '');
-//     const b = prompt("На сколько вы его оцените?", '');
-//         if (a != null && b != null && a != '' && b != '' && a.length < 50) {
-//            numerOfFilmsDB.movies[a] = b;
-//             console.log("done");
-//         } 
-//         else{
-//             console.log("error");
-//             i--;
-//         }
+for (let i = 0; i < 2; i++) {
+    const a = prompt("Один из последних просмотренных фильмов?", '');
+    const b = prompt("На сколько вы его оцените?", '');
+        if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+           numerOfFilmsDB.movies[a] = b;
+            console.log("done");
+        } 
+        else{
+            console.log("error");
+            i--;
+        }
 
 if (numerOfFilmsDB.count < 10){
     console.log("Посмотрено довольно мало фильмов");
